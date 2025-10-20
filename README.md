@@ -1,39 +1,49 @@
-# Movie Graph RAG: LangChain, Neo4j, and Groq
+# Movie Graph Project
 
-This project is contained within a single Jupyter Notebook (`Movie_graph.ipynb`). It demonstrates an end-to-end workflow for building a **Knowledge Graph (KG)** and implementing a **Retrieval-Augmented Generation (RAG)** system that enables natural language querying (NLQ) over graph data.
+This repository contains the code and resources for a project that utilizes a Graph Database (likely Neo4j) to model and query movie data. The project demonstrates how to structure complex relationships and retrieve insightful data using graph queries.
 
-It combines **LangChain** for orchestration, the **Neo4j** graph database for data storage, and a **Large Language Model (LLM)**—specifically **Groq's Gemma2-9b-It**—for both knowledge extraction and query translation.
+---
 
-## Key Features
+## 🚀 Key Files
 
-* **Technology Stack:** Integrates LangChain, Neo4j, and the Groq LLM for a high-performance RAG pipeline.
-* **Graph Creation from Text:** Demonstrates using the `LLMGraphTransformer` to extract structured data (entities and relationships) from raw, unstructured text.
-* **Movie Data Ingestion:** Loads a public movie dataset using a powerful Cypher `LOAD CSV` query, creating a cinematic knowledge graph with `Movie`, `Person`, and `Genre` nodes connected by `:ACTED_IN`, `:DIRECTED`, and `:IN_GENRE` relationships.
-* **Natural Language Querying (RAG):** Implements the **`GraphCypherQAChain`**, which is the core of the RAG system. This chain performs three steps:
-    1.  Translates an English question (e.g., "Who directed GoldenEye?") into a precise **Cypher query** using the LLM.
-    2.  Executes the Cypher query against the Neo4j graph.
-    3.  Synthesizes the factual results into a natural, human-readable answer.
+* **`Movie_graph.ipynb`**: The main Jupyter Notebook containing the code for creating the Neo4j database schema, importing data, and defining various Cypher queries.
+* **`Movie_Graphdbqa.ipynb`**: A notebook demonstrating a Question-Answering (QA) system built on top of the graph database.
+* **`requirements.txt`**: Lists all necessary Python dependencies (e.g., `langchain`, `neo4j`, etc.).
+* **`screenshots/`**: Directory containing visual examples of the project's output and functionality.
 
-### Visual Demonstration
+---
 
-Here are some screenshots of the graph query chain in action:
+## 🖼️ Project Screenshots
 
-**1. Neo4j Graph Output or Cypher Chain Execution Example**
-![Cypher Chain Execution Example](screenshots/Screenshot 2025-09-26 185910.png)
+Below are a few screenshots showcasing the results and query outputs from the notebooks.
 
-**2. RAG Question and Answer Output**
-![RAG Question and Answer Output](screenshots/Screenshot 2025-09-26 190152.png)
-## Getting Started
+### 1. Example Query Output (Cypher Queries)
 
-### Prerequisites
+This screenshot displays the output of various complex Cypher queries used to analyze the movie data, demonstrating the power of graph traversal.
 
-* **Python 3.8**
-* Access to a **Neo4j Database** instance (Cloud or Local).
-* A **Groq API Key**.
+![Example of Cypher Query Results](screenshots/Screenshot%202025-09-26%20185910.png)
 
-### Installation
+### 2. DBQA System Demonstration
 
-Install the required Python packages using pip:
+This image illustrates the Question-Answering system's ability to interpret natural language questions and return accurate answers by querying the Neo4j graph database.
 
-```bash
-pip install --upgrade --quiet  langchain langchain-community langchain-groq neo4j langchain_experimental
+![Demonstration of the DBQA System](screenshots/Screenshot%202025-09-26%20190152.png)
+
+---
+
+## 🛠️ Setup and Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone your-repo-name
+    cd your-repo-name
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Run Neo4j:** Ensure you have a Neo4j instance running (either locally or in the cloud).
+
+4.  **Execute Notebooks:** Open and run the cells in `Movie_graph.ipynb` to set up the database, then run `Movie_Graphdbqa.ipynb` to test the QA system.
