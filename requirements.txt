@@ -1,0 +1,9 @@
+langchain
+langchain-community
+langchain-groq
+neo4j
+langchain-experimental
+pandas
+numpy
+matplotlib
+seaborn
