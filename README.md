@@ -14,6 +14,15 @@ It combines **LangChain** for orchestration, the **Neo4j** graph database for da
     2.  Executes the Cypher query against the Neo4j graph.
     3.  Synthesizes the factual results into a natural, human-readable answer.
 
+### Visual Demonstration
+
+Here are some screenshots of the graph query chain in action:
+
+**1. Neo4j Graph Output or Cypher Chain Execution Example**
+![Cypher Chain Execution Example](screenshots/Screenshot 2025-09-26 185910.png)
+
+**2. RAG Question and Answer Output**
+![RAG Question and Answer Output](screenshots/Screenshot 2025-09-26 190152.png)
 ## Getting Started
 
 ### Prerequisites
