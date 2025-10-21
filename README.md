@@ -21,13 +21,13 @@ Below are a few screenshots showcasing the results and query outputs from the no
 
 This screenshot displays the output of various complex Cypher queries used to analyze the movie data, demonstrating the power of graph traversal.
 
-![Example of Cypher Query Results](screenshot/Screenshot1.png)
+![Example of Cypher Query Results](screenshot/Screenshot2.png)
 
 ### 2. DBQA System Demonstration
 
 This image illustrates the Question-Answering system's ability to interpret natural language questions and return accurate answers by querying the Neo4j graph database.
 
-![Demonstration of the DBQA System](screenshot/Screenshot2.png)
+![Demonstration of the DBQA System](screenshot/Screenshot1.png)
 
 ---
 
