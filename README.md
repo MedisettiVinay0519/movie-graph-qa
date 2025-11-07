@@ -31,17 +31,7 @@ This image illustrates the Question-Answering system's ability to interpret natu
 
 ---
 
-## 🛠️ Setup and Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone your-repo-name
-    cd your-repo-name
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
     ```
 
 3.  **Run Neo4j:** Ensure you have a Neo4j instance running (either locally or in the cloud).
